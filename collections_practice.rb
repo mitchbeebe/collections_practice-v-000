@@ -40,3 +40,13 @@ def sum_array(array)
     sum + n
   end
 end
+
+def add_s(array)
+  array.each_with_index.collect do |item, idx|
+    if idx != 1
+      item << "s"
+    else
+      item
+    end
+  end
+end
